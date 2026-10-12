@@ -4,7 +4,7 @@ const en: Locale = {
   nav: {
     home: 'Home',
     about: 'About',
-    experience: 'Experience',
+    experience: 'Work experience',
     skills: 'Skills',
     projects: 'Projects',
     contact: 'Contact',
@@ -32,7 +32,7 @@ const en: Locale = {
     ],
   },
   experience: {
-    title: 'Experience',
+    title: 'Work experience',
     items: [
       {
         period: 'Apr 2022 — Oct 2025',

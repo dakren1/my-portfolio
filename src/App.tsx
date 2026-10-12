@@ -21,8 +21,8 @@ export default function App() {
         <Hero />
         <About />
         <Experience />
-        <Skills />
         <Projects />
+        <Skills />
         <Contact />
       </main>
       <footer className="border-t border-white/5 py-8 text-center text-sm text-muted">

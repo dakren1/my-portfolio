@@ -2,7 +2,7 @@ const es = {
   nav: {
     home: 'Inicio',
     about: 'Sobre mí',
-    experience: 'Experiencia',
+    experience: 'Experiencia laboral',
     skills: 'Habilidades',
     projects: 'Proyectos',
     contact: 'Contacto',
@@ -30,7 +30,7 @@ const es = {
     ],
   },
   experience: {
-    title: 'Experiencia',
+    title: 'Experiencia laboral',
     items: [
       {
         period: 'abr 2022 — oct 2025',

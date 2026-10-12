@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { HiOutlineMenu, HiOutlineX } from 'react-icons/hi'
 import { useCvUrl } from '../hooks/useCvUrl'
 
-const links = ['home', 'about', 'experience', 'skills', 'projects', 'contact'] as const
+const links = ['home', 'about', 'experience', 'projects', 'skills', 'contact'] as const
 
 export default function Navbar() {
   const { t, i18n } = useTranslation()
