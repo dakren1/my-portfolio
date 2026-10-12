@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-night: #050b1f;
+  --color-night-2: #0a1433;
+  --color-brand: #1e6bff;
+  --color-neon: #00e5ff;
+  --color-violet-neon: #7a5cff;
+  --color-ink: #e6eeff;
+  --color-muted: #8fa3cc;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, var(--color-night) 0%, var(--color-night-2) 100%) fixed;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-neon);
+  color: var(--color-night);
+}
+
+@utility glass {
+  background: rgb(10 20 51 / 0.55);
+  border: 1px solid rgb(0 229 255 / 0.18);
+  backdrop-filter: blur(12px);
+}
+
+@utility text-glow {
+  text-shadow: 0 0 18px rgb(0 229 255 / 0.55);
+}
+
+@utility box-glow {
+  box-shadow: 0 0 22px rgb(0 229 255 / 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
