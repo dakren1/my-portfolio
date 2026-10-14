@@ -91,9 +91,11 @@ const es = {
     title: 'Proyectos',
     demo: 'Demo',
     code: 'Código',
+    watch: 'Ver video de presentación',
     items: [
       {
         name: 'HunicJS',
+        video: 'PrdNxjfhLUI',
         period: '2026 · Proyecto propio',
         description: 'Plataforma de documentación de diseño con servidor MCP y chat con RAG.',
         bullets: [

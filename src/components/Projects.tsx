@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { FaGithub } from 'react-icons/fa'
 import { HiOutlineExternalLink } from 'react-icons/hi'
 import Section from './Section'
+import VideoEmbed from './VideoEmbed'
 
 interface Project {
   name: string
@@ -9,6 +10,7 @@ interface Project {
   description: string
   bullets: string[]
   tags: string[]
+  video?: string
   demo?: string
   repo?: string
 }
@@ -28,6 +30,11 @@ export default function Projects() {
             <p className="text-sm text-neon">{p.period}</p>
             <h3 className="mt-1 font-display text-2xl font-semibold">{p.name}</h3>
             <p className="mt-3 text-lg text-muted">{p.description}</p>
+            {p.video && (
+              <div className="mt-6">
+                <VideoEmbed id={p.video} title={`${p.name} · ${p.description}`} playLabel={t('projects.watch')} />
+              </div>
+            )}
             <ul className="mt-5 list-disc space-y-2 pl-5 text-muted marker:text-neon">
               {p.bullets.map((b) => (
                 <li key={b}>{b}</li>

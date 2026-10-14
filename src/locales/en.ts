@@ -93,9 +93,11 @@ const en: Locale = {
     title: 'Projects',
     demo: 'Demo',
     code: 'Code',
+    watch: 'Watch the presentation video',
     items: [
       {
         name: 'HunicJS',
+        video: 'PrdNxjfhLUI',
         period: '2026 · Personal project',
         description: 'Design documentation platform with an MCP server and a RAG chat.',
         bullets: [
